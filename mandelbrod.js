@@ -69,13 +69,13 @@ function createImage()
     
     c.addEventListener('mousedown', function(evt){
         var coords = getMousePos(c, evt);
-        nxtxa = curxa + (((curxb - curxa) * coords.x) / wdt;
-        nxtya = curyx + (((curyb - curya) * coords.y) / hgt;
+        nxtxa = curxa + (((curxb - curxa) * coords.x) / wdt);
+        nxtya = curya + (((curyb - curya) * coords.y) / hgt);
     });
     
     c.addEventListener('mouseup', function(evt){
         var coords = getMousePos(c, evt);
-        nxtxb = curxa + (((curxb - curxa) * coords.x) / wdt;
+        nxtxb = curxa + (((curxb - curxa) * coords.x) / wdt);
         nxtyb = nxtya + nxtxb - nxtxa;
         curxa = nxtxa;
         curxb = nxtxb;
