@@ -61,8 +61,7 @@ function createImage()
     function getMousePos(canv, evt)
     {
         var rect = canv.getBoundingClientRect();
-        return
-        {
+        return{
             x: evt.clientX - rect.left,
             y: evt.clientY - rect.top
         };
