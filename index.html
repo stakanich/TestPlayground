@@ -16,11 +16,11 @@
 
                         //console.log(json);
                         $.each(json, function() {
-                            var tbl_row = "";
+                            var tbl_row = "<tr>";
                             $.each(this, function(k , v) {
                                 tbl_row += "<td>"+v+"</td>";
                             })
-                            $('#someTable tr:last').after(tbl_row);             
+                            $('#someTable tr:last').after(tbl_row + "</tr>");             
                         })
                     
                 })
