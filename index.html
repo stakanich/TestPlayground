@@ -1,0 +1,70 @@
+<html>
+
+    <head>
+
+        <title>
+            Наверно, самый лучший сайт
+        </title>
+        <meta charset="UTF-8">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $.getJSON("tableInit.json", function(json) {
+
+                        console.log(json);
+
+                    }
+                )
+            }
+            )
+        </script>
+
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;}
+
+            th, td {
+            padding: 15px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1 style="text-align:center; background-color:DodgerBlue;
+        padding: 15px; position: fixed; width: 100%;
+        top: 0; left: 0; overflow: hidden;
+        font-size: 150%;"">
+
+            <b>Невероятно</b><br>
+            <i>потрясающая</i><br>
+            <ins>страница</ins>
+        </h1>
+
+        <p style="text-align:center; padding:15; width: 100%; left: 0px;
+        margin-top: 130px; font-size: 130%;">
+            Данная страница была создана с целью<br>
+            ознакомления с инструментами:<br>
+            <em>HTML, JavaScript, CSS, jQuery, JSON и XML</em>
+        </p>
+
+        <p style="text-align:center; padding:15; width: 100%; left: 0px;">
+            Пример использования <b>HTML+JavaScript+jQuery+JSON</b>:
+        </p>
+
+        <table id="someTable" align="center">
+            <tr>
+                <th>Лучшая колонка</th>
+                <th>Еще более лучшая колонка</th>
+                <th>Третья колонка</th>
+            </tr>
+        </table>
+
+    </body>
+
+</html>
