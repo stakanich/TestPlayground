@@ -1,6 +1,6 @@
 function createImage()
 {
-    console.log("Drawing");
+    //console.log("Drawing");
     var c = document.getElementById("someCanvas");
     var ctx = c.getContext("2d");
     var wgt = 200
@@ -57,5 +57,7 @@ function createImage()
             }
         }
     }
+    
+    drawSet(nxtxa, nxtxb, nxtya, nxtyb);
     
 }
