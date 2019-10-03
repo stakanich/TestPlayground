@@ -82,7 +82,7 @@ function createImage()
         curya = nxtya;
         curyb = nxtyb;
         drawSet(nxtxa, nxtxb, nxtya, nxtyb);
-    }):
+    });
     
     drawSet(nxtxa, nxtxb, nxtya, nxtyb);
     
