@@ -9,22 +9,12 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="mandelbrod.js"></script>
 
         <script>
             $(document).ready(function(){
-                $.getJSON("tableInit.json", function(json) {
-
-                        //console.log(json);
-                        $.each(json, function() {
-                            var tbl_row = "<tr>";
-                            $.each(this, function(k , v) {
-                                tbl_row += "<td>"+v+"</td>";
-                            })
-                            $('#someTable tr:last').after(tbl_row + "</tr>");             
-                        })
-                    
-                })
+                $("h4 span").click(function(){
+                    $(this).parent().next().slideToggle();
+                });
             }
             )
         </script>
@@ -41,44 +31,94 @@
 
     </head>
 
-    <body>
+    <body style="margin: 0; background-color: #7483F2">
 
-        <h1 style="text-align:center; background-color:DodgerBlue;
-        padding: 15px; position: fixed; width: 100%;
-        top: 0; left: 0; overflow: hidden;
-        font-size: 150%;">
+        <div align="center" style="margin: 0; padding: 0;">
+            <h1>
+                Старков Дмитрий Игоревич
+            </h1>
+            
+            <h2>
+                ИДМ-19-06
+            </h2>
+            
+            <h3>
+                Персональная страница - отчет по лабораторным работам
+            </h3>
+        </div>
 
-            <b>Невероятно</b><br>
-            <i>потрясающая</i><br>
-            <ins>страница</ins>
-        </h1>
+        <div align = "center" style="display:grid; grid-template-columns: 1fr 1fr; 
+        margin: 0 10%;">
+            <div style="border: 3px solid #F274D2; border-radius: 10px; margin: 3%;
+            background-color: #74F2B6; -webkit-box-shadow: 0px 0px 50px #74F2B6;">
+                <h4>
+                    Лабораторная работа №1
+                    <span class="expand" style = "margin: 3%; cursor: pointer;">+</span>
+                </h4>
 
-        <p style="text-align:center; padding:15; width: 100%; left: 0px;
-        margin-top: 130px; font-size: 130%;">
-            Данная страница была создана с целью<br>
-            ознакомления с инструментами:<br>
-            <em>HTML, JavaScript, CSS, jQuery, JSON и XML</em>
-        </p>
+                <div class="text" style="background-color: #E8E5E5; margin: 2%;
+                border-radius: 10px; padding: 1%; display:none;">
+                    <h4 style="text-align:center; margin:0; padding: 0;"><p>Экосистема разработки программ с открытым кодом</h4>
+                    <h5 style="text-align:center; margin:0; padding: 0;"><p>Создание персональной страницы-отчета на github и работа с git</h5>
+                    <p><b>1</b>. Регистрация на GitHub 
+                    <p><b>2</b>. Подключиться к репозиторию 
+                    <p><b>3.</b> Создать личную страницу 
+                    <p><a href = 'https://github.com/'>Страница пользователя</a>
+                    <p><b>4.</b> Создать персональную веб страницу-отчет с использованием html, css, js. 
+                    <p><a href = '#'>Персональная страница-отчет. </a>
+                    <p><b>5.</b> Загрузить персональную веб страницу-отчет в репозиторий 
+                    по курсу "Интернет-технологии" на GitHub. 
+                    <p><a href = 'https://github.com/stankin/inet-2019/tree/master/'>Исходные коды</a>
+                </div>
 
-        <p style="text-align:center; padding:15; width: 100%; left: 0px;">
-            Пример использования <b>HTML+JavaScript+jQuery+JSON</b>:
-        </p>
+            </div>
+            <div style="border: 3px solid #F274D2; border-radius: 10px; margin: 3%;
+            background-color: #E7F274; -webkit-box-shadow: 0px 0px 50px #E7F274;">
+                <h4>
+                    Лабораторная работа №2
+                    <span class="expand" style = "margin: 3%; cursor: pointer;">+</span>
+                </h4>
 
-        <table id="someTable" align="center">
-            <tr>
-                <th>Лучшая колонка</th>
-                <th>Еще более лучшая колонка</th>
-                <th>Третья колонка</th>
-            </tr>
-        </table>
-                                            
-        <p align="center" style="margin: 40px;">
-            <canvas id="someCanvas" width = 400 height = 400 style="border: 1px solid #000000;"></canvas>
-            <br>
-            <button style="font-size:16px; margin: 30px;" onclick = "createImage()">Пример работы HTML5+JavaScript</button>
-            <br>
-            P.S.: выделяя области мышкой, их можно увеличивать.
-        </p>
+                <div class="text" style="background-color: #E8E5E5; margin: 2%;
+                border-radius: 10px; padding: 1%; display: none;">
+                    <h4 style="text-align:center; margin:0; padding: 0;"><p>Разработка простого веб-приложения</h4>
+                    <h5 style="text-align:center; margin:0; padding: 0;"><p>Проектирование и разработка индивидуального или коллективного веб-приложения с использованием html, css, js + json, xml</h5>
+                    <p><b>1.</b> Собрать команду для разработки веб-приложения и распределить роли. 
+                    <p><a href = "https://github.com/">Страница команд. </a>
+                    <p><b>2.</b> Разработать макет страницы веб-приложения.
+                    <p><a href = "https://girhub.com/">Макет страницы. </a>
+                    <p><b>3.</b> Прописать стили страницы. Исходный код на css. 
+                    <p><b>4.</b> Прописать js функционал и реализовать возможность чтения json. 
+                    <p>Исходный код на js и json.
+                </div>
+            </div>
+            <div style="border: 3px solid #F274D2; border-radius: 10px; margin: 3%;
+            background-color: #F2B674; -webkit-box-shadow: 0px 0px 50px #F2B674;">
+                <h4>
+                    Лабораторная работа №3
+                    <span class="expand" style = "margin: 3%; cursor: pointer;">+</span>
+                </h4>
+
+                <div class="text" style="background-color: #E8E5E5; margin: 2%;
+                border-radius: 10px; padding: 1%; display:none;">
+                    <h4 style="text-align:center; margin:0; padding: 0;"><p>Настройка локальной сети передачи данных</h4>
+                    <h5 style="text-align:center; margin:0; padding: 0;"><p>Настройка коммутаторов и маршрутизаторов</h5>
+                    
+                </div>
+            </div>
+            <div style="border: 3px solid #F274D2; border-radius: 10px; margin: 3%;
+            background-color: #74F2F1; -webkit-box-shadow: 0px 0px 50px #74F2F1;">
+                <h4>
+                    Подготовка к экзамену
+                    <span class="expand" style = "margin: 3%; cursor: pointer;">+</span>
+                </h4>
+                <div class="text" style="background-color: #E8E5E5; margin: 2%;
+                border-radius: 10px; padding: 1%; display:none;">
+                    <h4 style="text-align:center; margin:0; padding: 0;"><p>Тут билет</h4>
+                    
+                </div>
+            </div>
+        </div>
 
     </body>
 
